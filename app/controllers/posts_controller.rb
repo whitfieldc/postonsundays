@@ -8,19 +8,17 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    respond_to do |format|
-      if @post.save
-        format.json { render json: @post, status: :created }
-      else
-        format.json { render json: @post.errors.full_messages, status: :unprocessable_entity }
-      end
+    if @post.save
+      render json: @post, status: :created
+    else
+      render json: @post.errors.full_messages, status: :unprocessable_entity
     end
   end
 
 private
 
   def post_params
-    params.require(:post).permit(:title,:content)
+    params.require(:post).permit(:title,:content,:author_name)
   end
 
   def allow_cross_domain
