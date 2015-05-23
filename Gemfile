@@ -7,8 +7,10 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
+gem 'pg'
 
-gem 'sqlite3'
+gem 'sqlite3', :group => :development
+
 
 
 
