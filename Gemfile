@@ -11,6 +11,8 @@ gem 'pg'
 
 gem 'sqlite3', :group => :development
 
+gem 'rack-cors', :require => 'rack/cors'
+
 
 
 
