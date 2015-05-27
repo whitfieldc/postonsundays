@@ -10,7 +10,13 @@ http://postonsundays.herokuapp.com/posts with JSON in format:
 
 ```JSON
 
-'{"post":{"author_name":"Name Here", "content":"Sample content here", "title":"hello"}}'
+'{
+  "post":{
+          "author_name":"Name Here",
+          "content":"Sample content here",
+          "title":"hello"
+          }
+        }'
 
 ```
 
