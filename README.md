@@ -13,3 +13,11 @@ http://postonsundays.herokuapp.com/posts with JSON in format:
 '{"post":{"author_name":"Name Here", "content":"Sample content here", "title":"hello"}}'
 
 ```
+
+with headers:
+
+```JSON
+
+"Content-Type: application/json"
+
+```
