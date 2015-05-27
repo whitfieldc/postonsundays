@@ -4,22 +4,12 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Utilizes Rails strong params:
+post to
+http://postonsundays.herokuapp.com/posts with JSON in format:
 
-* Ruby version
+```JSON
 
-* System dependencies
+'{"post":{"author_name":"Name Here", "content":"Sample content here", "title":"hello"}}'
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
